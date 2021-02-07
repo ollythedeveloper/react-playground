@@ -6,6 +6,7 @@ import TheDate from './state/TheDate';
 import Counter from './state/Counter';
 import Tabs from './state/Tabs'
 import Accordion from './state-drills/Accordion'
+import DemonymApp from './demonymapp/denomymApp';
 
 //make 2 tooltips here and another inside the App directly
 const firstTooltip = (
@@ -45,8 +46,9 @@ const sections = [
 
 class App extends React.Component {
   render(){
-   return <div>
-     <Accordion sections={sections} />
+   return <div className="App">
+     {/* <Accordion sections={sections} /> */}
+     <DemonymApp/>
      </div>
   }
 }
