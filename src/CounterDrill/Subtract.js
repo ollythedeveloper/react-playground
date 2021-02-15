@@ -4,7 +4,7 @@ class Subtract extends Component {
     render(){
         return (
             <div className="subtractCount__button">
-                <button onClick={e => this.subtractCount}> - </button>
+                <button onClick={this.props.handleSubtract}> - </button>
             </div>
         )
     }

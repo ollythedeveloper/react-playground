@@ -55,12 +55,12 @@ class App extends React.Component {
     };
   }
 
-  // addCount = () => {
-  //   const addCount = this.state.count +1
-  //   this.setState({
-  //     count: addCount
-  //   })
-  // }
+  addCount = () => {
+    const addCount = this.state.count +1
+    this.setState({
+      count: addCount
+    })
+  }
 
   subtractCount = () => {
     const subtractCount = this.state.count -1
@@ -74,10 +74,9 @@ class App extends React.Component {
      {/* <Accordion sections={sections} /> */}
      {/* <DemonymApp/> */}
      <Add
-        count={this.state.count} />
+        handleAdd={this.addCount}/>
      <CounterApp count={this.state.count} />
-     <Subtract 
-        count={this.state.count}
+     <Subtract
         handleSubtract={this.subtractCount}/>
      </div>
   }
